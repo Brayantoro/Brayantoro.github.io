@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /*me permite deslizar cuando haga clic en los links del menu*/
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    font-family: 'lato', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+/*Menu*/
+.contenedor-header {
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a {
+    text-align: none;
+    color: aliceblue;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: #00FF7F;
+}
+
+.nav-responsive {
+    background-color: #00FF7F;
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#particulas-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background: black;
+    z-index: -1;
+}
+
+/*SECCION INICIO*/
+.inicio {
+    background-size: cover;
+
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    position: relative;
+    position: absolute;
+    left: 600px;
+    top: 100px;
+    z-index: 99;
+
+}
+
+.inicio .contenido-banner {
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+    position: relative;
+    z-index: 99;
+
+}
+
+.contenido-banner .contenedor-img img {
+    width: 225px;
+    height: 225px;
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner img {
+
+    margin-top: 20px;
+    border: 5px solid #1CB698;
+    display: block;
+    width: 70%;
+    margin: auto;
+    border-radius: 100%;
+
+}
+
+.inicio .contenido-banner h1 {
+    margin-top: 32px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.inicio .contenido-banner h2 {
+    color: #1CB698;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes a {
+    color: aliceblue;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid aliceblue;
+    border-radius: 100%;
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.inicio .contenido-banner .redes a:hover {
+    background-color: #1CB698;
+}
+
+/* SECCION SOBRE MI CSS */
+
+.sobremi {
+    background-color: #1e2326;
+    color: aliceblue;
+    padding: 50px 20px;
+    font-size: 99;
+
+}
+
+.sobremi .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+.sobremi h2 {
+    font-size: 48px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobremi .contenido-seccion p span {
+    color: #1CB698;
+    font-weight: bold;
+
+}
+
+.sobremi .fila {
+    display: flex;
+}
+
+.sobremi .fila .col {
+    width: 50%;
+}
+
+.sobremi .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium';
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .col ul {
+    list-style: none;
+
+}
+
+.sobremi .fila .col ul li {
+    margin: 12px 0;
+
+}
+
+.sobremi .fila .col ul li strong {
+    display: inline-block;
+    color: #1CB698;
+    width: 130px;
+}
+
+
+.sobremi .fila .col ul li span {
+    background-color: #1CB698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobremi .fila .col .contenedor-intereses {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses {
+    width: 106px;
+    height: 106px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses:hover {
+    background-color: #1CB698;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.sobremi button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.sobremi button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi button:hover .overlay {
+    width: 100%;
+}
+
+/* SECCION DE H A B I L I D A D E S */
+
+.habilidades {
+    background-color: #252A2E;
+    color: aliceblue;
+    padding: 50px 20px;
+    font-size: 99;
+
+}
+
+.habilidades .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+.habilidades h2 {
+    font-size: 48px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.habilidades .fila {
+    display: flex;
+}
+
+.habilidades .fila .col {
+    width: 50%;
+    padding: 0 20px;
+
+}
+.habilidades .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium';
+    margin-bottom: 25px;
+}
+.habilidades .habilidad > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.habilidades .habilidad .barra-habilidad{
+    height: 8px;
+    width: 80%;
+    background-color:#1ABC9C;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+.habilidades .habilidad .progreso{
+    background-color: #FF5733;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.habilidades .habilidad .barra-habilidad span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #FF5733;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top:-17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.habilidades .habilidad .java{
+    width: 0%;
+    animation: 2s java forwards;
+}
+@keyframes java{
+0%{width: 0%;}
+100%{width: 90%;}
+}
+
+.habilidades .habilidad .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss{
+0%{width: 0%;}
+100%{width: 70%;}
+}
+
+.habilidades .habilidad .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript{
+0%{width: 0%;}
+100%{width: 50%;}
+}
+
+.habilidades .habilidad .mySql{
+    width: 0%;
+    animation: 2s mySql forwards;
+}
+@keyframes mySql{
+0%{width: 0%;}
+100%{width: 80%;}
+}
+.habilidades .habilidad .golang{
+    width: 0%;
+    animation: 2s golang forwards;
+}
+@keyframes golang{
+0%{width: 0%;}
+100%{width: 45%;}
+}
+
+.habilidades .habilidad .git{
+    width: 0%;
+    animation: 2s git forwards;
+}
+@keyframes git{
+0%{width: 0%;}
+100%{width: 60%;}
+}
+
+.habilidades .habilidad .nube{
+    width: 0%;
+    animation: 2s nube forwards;
+}
+@keyframes nube{
+0%{width: 0%;}
+100%{width: 40%;}
+}
+
+
+.habilidades .habilidad .Comunicacion{
+    width: 0%;
+    animation: 2s Comunicacion forwards;
+}
+@keyframes Comunicacion{
+0%{width: 0%;}
+100%{width: 100%;}
+}
+
+.habilidades .habilidad .trabajo{
+    width: 0%;
+    animation: 2s trabajo forwards;
+}
+@keyframes trabajo{
+0%{width: 0%;}
+100%{width: 80%;}
+}
+.habilidades .habilidad .Creatividad{
+    width: 0%;
+    animation: 2s Creatividad forwards;
+}
+@keyframes Creatividad{
+0%{width: 0%;}
+100%{width: 90%;}
+}
+.habilidades .habilidad .Dedidicacion{
+    width: 0%;
+    animation: 2s Dedidicacion forwards;
+}
+@keyframes Dedidicacion{
+0%{width: 0%;}
+100%{width: 80%;}
+}
+
+.habilidades .habilidad .gesstionproyectos{
+    width: 0%;
+    animation: 2s gesstionproyectos forwards;
+}
+@keyframes gesstionproyectos{
+0%{width: 0%;}
+100%{width: 95%;}
+}
+
+/*SECCCION CURRICULUM*/
+
+.curriculum {
+    background-color: #1e2326;
+    color: aliceblue;
+    padding: 50px 20px;
+    font-size: 99;
+
+}
+.curriculum .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+
+}
+.curriculum h2 {
+    font-size: 48px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    padding: 30px 0;
+}
+.curriculum .fila {
+    display: flex;
+}
+.curriculum .fila .col{
+
+}
+
+
+
+
+
+
+
+
+
+
+

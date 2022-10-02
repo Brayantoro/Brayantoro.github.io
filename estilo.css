@@ -1,0 +1,865 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /*me permite deslizar cuando haga clic en los links del menu*/
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+/*Menu*/
+.contenedor-header {
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a {
+    text-align: none;
+    color: aliceblue;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: #00FF7F;
+}
+
+.nav-responsive {
+    background-color: #00FF7F;
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.particulas-js {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%
+}
+
+#particulas-js {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    position: fixed;
+
+
+}
+
+/*SECCION INICIO*/
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.inicio .contenido-banner {
+    position: absolute;
+    top: 110px;
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: 0;
+    text-align: center;
+    border-radius: 40px;
+
+}
+
+.contenido-banner .contenedor-img img {
+    width: 225px;
+    height: 225px;
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner img {
+
+    margin-top: 20px;
+    border: 5px solid #1CB698;
+    display: block;
+    width: 70%;
+    margin: auto;
+    border-radius: 100%;
+
+}
+
+
+.inicio .contenido-banner h1 {
+    margin-top: 32px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.inicio .contenido-banner h2 {
+    color: #1CB698;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes a {
+    color: aliceblue;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid aliceblue;
+    border-radius: 100%;
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.inicio .contenido-banner .redes a:hover {
+    background-color: #1CB698;
+}
+
+/* SECCION SOBRE MI CSS */
+
+.sobremi {
+    background-color: #1e2326;
+    color: aliceblue;
+    padding: 50px 20px;
+    font-size: 100;
+    z-index: 99;
+
+}
+
+.sobremi .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+.sobremi h2 {
+    font-size: 48px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobremi .contenido-seccion p span {
+    color: #1CB698;
+    font-weight: bold;
+
+}
+
+.sobremi .fila {
+    display: flex;
+}
+
+.sobremi .fila .col {
+    width: 50%;
+}
+
+.sobremi .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium';
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .col ul {
+    list-style: none;
+
+}
+
+.sobremi .fila .col ul li {
+    margin: 12px 0;
+
+}
+
+.sobremi .fila .col ul li strong {
+    display: inline-block;
+    color: #1CB698;
+    width: 130px;
+}
+
+
+.sobremi .fila .col ul li span {
+    background-color: #1CB698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobremi .fila .col .contenedor-intereses {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses {
+    width: 106px;
+    height: 106px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses:hover {
+    background-color: #1CB698;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.sobremi button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.sobremi button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi button:hover .overlay {
+    width: 100%;
+}
+
+/* SECCION DE H A B I L I D A D E S */
+
+.habilidades {
+    background-color: #252A2E;
+    color: aliceblue;
+    padding: 50px 20px;
+    font-size: 99;
+
+}
+
+.habilidades .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+.habilidades h2 {
+    font-size: 48px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.habilidades .fila {
+    display: flex;
+}
+
+.habilidades .fila .col {
+    width: 50%;
+    padding: 0 20px;
+
+}
+
+.habilidades .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium';
+    margin-bottom: 50px;
+    
+}
+
+.habilidades .habilidad>span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+    margin: 10px;
+}
+
+.habilidades .habilidad .barra-habilidad {
+    height: 8px;
+    width: 80%;
+    background-color: #1ABC9C;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+/* iconos habilidades */
+/* .habilidades .habilidad img {
+    width: 90px;
+    height: 90px;
+} */
+
+.habilidades .habilidad ul {
+    position: relative;
+    display: flex;
+    transform: rotate(-25deg) skew(25deg);
+    top: -60px;
+    margin: 15px;
+    line-height: 18px;
+   
+    
+}
+
+.habilidades .habilidad ul li {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    list-style: none;
+    top: -20px;
+}
+
+
+.habilidades .habilidad ul li::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 10px;
+    bottom: -10px;
+    background-color: #2E4053;
+    transform-origin: top;
+    transform: skew(-41deg);
+
+}
+
+.habilidades .habilidad ul li::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 100%;
+    left: -9px;
+    background-color: #2E4053;
+    transform-origin: right;
+    transform: skewY(-41deg);
+
+
+}
+.habilidades .habilidad ul li span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #424949;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+
+.habilidades .habilidad ul li:hover span {
+    color: #ffffff;
+    box-shadow: -1px 1px 1px (255,255,255,0.05);
+    z-index: 1000;
+
+}
+/*java*/
+.habilidades .habilidad .java ul li:hover span {
+    color: #3498DB;
+    box-shadow: -1px 1px 1px (255,255,255,0.05);
+    z-index: 1000;
+
+}
+
+/* para el icono de java  */
+.habilidades .habilidad .java ul li:hover  span:nth-child(5) {
+    transform: translate(40px,-40px);
+    opacity: 1;
+}
+.habilidades .habilidad .java ul li:hover  span:nth-child(4) {
+    transform: translate(30px,-30px);
+    opacity: 0.8;
+}
+.habilidades .habilidad .java ul li:hover  span:nth-child(3) {
+    transform: translate(20px,-20px);
+    opacity: 0.6;
+}
+.habilidades .habilidad .java ul li:hover  span:nth-child(2) {
+    transform: translate(10px,-10px);
+    opacity: 0.4;
+}
+.habilidades .habilidad .java ul li:hover  span:nth-child(1) {
+    transform: translate(0px,-0px);
+    opacity: 0.2;
+}
+
+.habilidades .habilidad .java ul li:hover:nth-child(1)  span {
+    background-color: beige;
+}
+
+/*para el icono de hmtl y css*/
+.habilidades .habilidad .html ul li:hover  span:nth-child(5) {
+    transform: translate(40px,-40px);
+    opacity: 1;
+}
+.habilidades .habilidad .html ul li:hover  span:nth-child(4) {
+    transform: translate(30px,-30px);
+    opacity: 0.8;
+}
+.habilidades .habilidad .html ul li:hover  span:nth-child(3) {
+    transform: translate(20px,-20px);
+    opacity: 0.6;
+}
+.habilidades .habilidad .html ul li:hover  span:nth-child(2) {
+    transform: translate(10px,-10px);
+    opacity: 0.4;
+}
+.habilidades .habilidad .html ul li:hover  span:nth-child(1) {
+    transform: translate(0px,-0px);
+    opacity: 0.2;
+}
+
+.habilidades .habilidad .html ul li:hover:nth-child(1)  span {
+    background-color: #fb5607 ;
+}
+.habilidades .habilidad .html ul li:hover:nth-child(2)  span {
+    background-color: #0077b6 ;
+}
+
+/* para el icono de javascript */
+.habilidades .habilidad .javascript ul li:hover  span:nth-child(5) {
+    transform: translate(40px,-40px);
+    opacity: 1;
+}
+.habilidades .habilidad .javascript ul li:hover  span:nth-child(4) {
+    transform: translate(30px,-30px);
+    opacity: 0.8;
+}
+.habilidades .habilidad .javascript ul li:hover  span:nth-child(3) {
+    transform: translate(20px,-20px);
+    opacity: 0.6;
+}
+.habilidades .habilidad .javascript ul li:hover  span:nth-child(2) {
+    transform: translate(10px,-10px);
+    opacity: 0.4;
+}
+.habilidades .habilidad .javascript ul li:hover  span:nth-child(1) {
+    transform: translate(0px,-0px);
+    opacity: 0.2;
+}
+
+.habilidades .habilidad .javascript ul li:hover:nth-child(1)  span {
+    background-color: #ffd60a;
+}
+
+/* para el icono de Go */
+.habilidades .habilidad .go ul li:hover  span:nth-child(5) {
+    transform: translate(40px,-40px);
+    opacity: 1;
+}
+.habilidades .habilidad .go ul li:hover  span:nth-child(4) {
+    transform: translate(30px,-30px);
+    opacity: 0.8;
+}
+.habilidades .habilidad .go ul li:hover  span:nth-child(3) {
+    transform: translate(20px,-20px);
+    opacity: 0.6;
+}
+.habilidades .habilidad .go ul li:hover  span:nth-child(2) {
+    transform: translate(10px,-10px);
+    opacity: 0.4;
+}
+.habilidades .habilidad .go ul li:hover  span:nth-child(1) {
+    transform: translate(0px,-0px);
+    opacity: 0.2;
+}
+
+.habilidades .habilidad .go ul li:hover:nth-child(1)  span {
+    background-color: #ffffff;
+}
+/*GO*/
+.habilidades .habilidad .go ul li:hover span {
+    color: #277BC0;
+    box-shadow: -1px 1px 1px (255,255,255,0.05);
+    z-index: 1000;
+
+}
+
+/* para el icono de Git */
+.habilidades .habilidad .git ul li:hover  span:nth-child(5) {
+    transform: translate(40px,-40px);
+    opacity: 1;
+}
+.habilidades .habilidad .git ul li:hover  span:nth-child(4) {
+    transform: translate(30px,-30px);
+    opacity: 0.8;
+}
+.habilidades .habilidad .git ul li:hover  span:nth-child(3) {
+    transform: translate(20px,-20px);
+    opacity: 0.6;
+}
+.habilidades .habilidad .git ul li:hover  span:nth-child(2) {
+    transform: translate(10px,-10px);
+    opacity: 0.4;
+}
+.habilidades .habilidad .git ul li:hover  span:nth-child(1) {
+    transform: translate(0px,-0px);
+    opacity: 0.2;
+}
+
+.habilidades .habilidad .git ul li:hover:nth-child(1)  span {
+    background-color: #fb5607;
+}
+
+.habilidades .habilidad .git ul li:hover:nth-child(2)  span {
+    background: linear-gradient(120deg, #9C0F48,#42032C) 
+}
+
+
+/* para el icono de AWS */
+.habilidades .habilidad .aws ul li:hover  span:nth-child(5) {
+    transform: translate(40px,-40px);
+    opacity: 1;
+}
+.habilidades .habilidad .aws ul li:hover  span:nth-child(4) {
+    transform: translate(30px,-30px);
+    opacity: 0.8;
+}
+.habilidades .habilidad .aws ul li:hover  span:nth-child(3) {
+    transform: translate(20px,-20px);
+    opacity: 0.6;
+}
+.habilidades .habilidad .aws ul li:hover  span:nth-child(2) {
+    transform: translate(10px,-10px);
+    opacity: 0.4;
+}
+.habilidades .habilidad .aws ul li:hover  span:nth-child(1) {
+    transform: translate(0px,-0px);
+    opacity: 0.2;
+}
+
+.habilidades .habilidad .aws ul li:hover:nth-child(1)  span {
+    background: linear-gradient(130deg, #fb5607 ,#ffd60a) 
+}
+
+
+
+
+
+.habilidades .habilidad .progreso {
+    background-color: #FF5733;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.habilidades .habilidad .barra-habilidad span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #FF5733;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.habilidades .habilidad .Comunicacion {
+    width: 0%;
+    animation: 2s Comunicacion forwards;
+}
+
+@keyframes Comunicacion {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.habilidades .habilidad .trabajo {
+    width: 0%;
+    animation: 2s trabajo forwards;
+}
+
+@keyframes trabajo {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.habilidades .habilidad .Creatividad {
+    width: 0%;
+    animation: 2s Creatividad forwards;
+}
+
+@keyframes Creatividad {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.habilidades .habilidad .Dedidicacion {
+    width: 0%;
+    animation: 2s Dedidicacion forwards;
+}
+
+@keyframes Dedidicacion {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.habilidades .habilidad .gesstionproyectos {
+    width: 0%;
+    animation: 2s gesstionproyectos forwards;
+}
+
+@keyframes gesstionproyectos {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+/*SECCCION CURRICULUM*/
+
+.curriculum {
+    background-color: #1e2326;
+    color: aliceblue;
+    padding: 50px 20px;
+    font-size: 99;
+
+}
+
+.curriculum .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+.curriculum h2 {
+    font-size: 48px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    padding: 30px 0;
+}
+
+.curriculum .fila {
+    display: flex;
+    justify-content: space-between;
+}
+
+.curriculum .fila .col {
+    width: 49%;
+    padding: 0 30px;
+}
+
+.curriculum .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium';
+    margin-bottom: 25px;
+}
+
+.curriculum .fila .izquierda {
+    border-right: 2px solid #252A2E;
+}
+
+.curriculum .fila .derecha {
+    border-left: 2px solid #252A2E;
+}
+
+.curriculum .fila .item {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+
+.curriculum .fila .item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.curriculum .fila .item .casa {
+    color: #1ABC9C;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.curriculum .fila .item .fecha {
+    display: block;
+    color: #1CB698;
+    margin-bottom: 10px;
+}
+
+.curriculum .fila .item {
+    line-height: 24px;
+}
+
+.curriculum .fila .izq {
+    border-right: 2px solid #1CB698;
+    margin-right: 20px;
+}
+
+.curriculum .fila .der {
+    border-left: 2px solid #1CB698;
+    margin-left: 20px;
+}
+
+.curriculum .fila .item .conectori {
+    height: 2px;
+    background-color: #1CB698;
+    width: 45px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 10;
+
+}
+
+.curriculum .fila .item .conectori .circuloi {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+
+.curriculum .fila .item .conectord {
+    height: 2px;
+    background-color: #1CB698;
+    width: 45px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 10;
+}
+
+.curriculum .fila .item .conectord .circulod {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+
+/* Seccion de Portafolio */
+
+.portafolio{
+    background-color: #252A2E;
+}
+
+.portafolio .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+
+}
+.contenido-seccion h2{
+    padding: 40px;
+    font-size: 48px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+
+
+}
+
+.proyectos-grid{
+ display: grid;
+ grid-template-columns: repeat(auto-fit,minmax(290px,auto)) ;
+ gap: 25px;
+ width: 90%;
+ 
+ margin: 0 auto;
+
+}
+
+.proyectos-grid img{
+   width: 100%;
+   display: block;
+   border-radius: 15px;
+   transition:  transform 0.2s ease;
+
+}
+.proyectos-grid img:hover{
+    transform: scale(1.1);
+ }
