@@ -95,15 +95,19 @@ body {
 /*SECCION INICIO*/
 
 .inicio {
+ 
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100;
-
+    margin-left: auto;
+    margin-right: auto;
+    margin-block: 15px;
+    margin-top: 15px;
+    position: relative;
+    z-index: 99;
 }
 
 .inicio .contenido-banner {
-    position: absolute;
     top: 110px;
     padding: 20px;
     background-color: #1e2326;
@@ -168,8 +172,8 @@ body {
     background-color: #1e2326;
     color: aliceblue;
     padding: 50px 20px;
-    font-size: 100;
-    z-index: 99;
+
+
 
 }
 
@@ -324,7 +328,7 @@ body {
     font-size: 28px;
     font-family: 'Franklin Gothic Medium';
     margin-bottom: 50px;
-    
+
 }
 
 .habilidades .habilidad>span {
@@ -356,8 +360,8 @@ body {
     top: -60px;
     margin: 15px;
     line-height: 18px;
-   
-    
+
+
 }
 
 .habilidades .habilidad ul li {
@@ -394,6 +398,7 @@ body {
 
 
 }
+
 .habilidades .habilidad ul li span {
     position: absolute;
     width: 100%;
@@ -409,187 +414,214 @@ body {
 
 .habilidades .habilidad ul li:hover span {
     color: #ffffff;
-    box-shadow: -1px 1px 1px (255,255,255,0.05);
+    box-shadow: -1px 1px 1px (255, 255, 255, 0.05);
     z-index: 1000;
 
 }
+
 /*java*/
 .habilidades .habilidad .java ul li:hover span {
     color: #3498DB;
-    box-shadow: -1px 1px 1px (255,255,255,0.05);
+    box-shadow: -1px 1px 1px (255, 255, 255, 0.05);
     z-index: 1000;
 
 }
 
 /* para el icono de java  */
-.habilidades .habilidad .java ul li:hover  span:nth-child(5) {
-    transform: translate(40px,-40px);
+.habilidades .habilidad .java ul li:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
     opacity: 1;
 }
-.habilidades .habilidad .java ul li:hover  span:nth-child(4) {
-    transform: translate(30px,-30px);
+
+.habilidades .habilidad .java ul li:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
     opacity: 0.8;
 }
-.habilidades .habilidad .java ul li:hover  span:nth-child(3) {
-    transform: translate(20px,-20px);
+
+.habilidades .habilidad .java ul li:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
     opacity: 0.6;
 }
-.habilidades .habilidad .java ul li:hover  span:nth-child(2) {
-    transform: translate(10px,-10px);
+
+.habilidades .habilidad .java ul li:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
     opacity: 0.4;
 }
-.habilidades .habilidad .java ul li:hover  span:nth-child(1) {
-    transform: translate(0px,-0px);
+
+.habilidades .habilidad .java ul li:hover span:nth-child(1) {
+    transform: translate(0px, -0px);
     opacity: 0.2;
 }
 
-.habilidades .habilidad .java ul li:hover:nth-child(1)  span {
+.habilidades .habilidad .java ul li:hover:nth-child(1) span {
     background-color: beige;
 }
 
 /*para el icono de hmtl y css*/
-.habilidades .habilidad .html ul li:hover  span:nth-child(5) {
-    transform: translate(40px,-40px);
+.habilidades .habilidad .html ul li:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
     opacity: 1;
 }
-.habilidades .habilidad .html ul li:hover  span:nth-child(4) {
-    transform: translate(30px,-30px);
+
+.habilidades .habilidad .html ul li:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
     opacity: 0.8;
 }
-.habilidades .habilidad .html ul li:hover  span:nth-child(3) {
-    transform: translate(20px,-20px);
+
+.habilidades .habilidad .html ul li:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
     opacity: 0.6;
 }
-.habilidades .habilidad .html ul li:hover  span:nth-child(2) {
-    transform: translate(10px,-10px);
+
+.habilidades .habilidad .html ul li:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
     opacity: 0.4;
 }
-.habilidades .habilidad .html ul li:hover  span:nth-child(1) {
-    transform: translate(0px,-0px);
+
+.habilidades .habilidad .html ul li:hover span:nth-child(1) {
+    transform: translate(0px, -0px);
     opacity: 0.2;
 }
 
-.habilidades .habilidad .html ul li:hover:nth-child(1)  span {
-    background-color: #fb5607 ;
+.habilidades .habilidad .html ul li:hover:nth-child(1) span {
+    background-color: #fb5607;
 }
-.habilidades .habilidad .html ul li:hover:nth-child(2)  span {
-    background-color: #0077b6 ;
+
+.habilidades .habilidad .html ul li:hover:nth-child(2) span {
+    background-color: #0077b6;
 }
 
 /* para el icono de javascript */
-.habilidades .habilidad .javascript ul li:hover  span:nth-child(5) {
-    transform: translate(40px,-40px);
+.habilidades .habilidad .javascript ul li:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
     opacity: 1;
 }
-.habilidades .habilidad .javascript ul li:hover  span:nth-child(4) {
-    transform: translate(30px,-30px);
+
+.habilidades .habilidad .javascript ul li:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
     opacity: 0.8;
 }
-.habilidades .habilidad .javascript ul li:hover  span:nth-child(3) {
-    transform: translate(20px,-20px);
+
+.habilidades .habilidad .javascript ul li:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
     opacity: 0.6;
 }
-.habilidades .habilidad .javascript ul li:hover  span:nth-child(2) {
-    transform: translate(10px,-10px);
+
+.habilidades .habilidad .javascript ul li:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
     opacity: 0.4;
 }
-.habilidades .habilidad .javascript ul li:hover  span:nth-child(1) {
-    transform: translate(0px,-0px);
+
+.habilidades .habilidad .javascript ul li:hover span:nth-child(1) {
+    transform: translate(0px, -0px);
     opacity: 0.2;
 }
 
-.habilidades .habilidad .javascript ul li:hover:nth-child(1)  span {
+.habilidades .habilidad .javascript ul li:hover:nth-child(1) span {
     background-color: #ffd60a;
 }
 
 /* para el icono de Go */
-.habilidades .habilidad .go ul li:hover  span:nth-child(5) {
-    transform: translate(40px,-40px);
+.habilidades .habilidad .go ul li:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
     opacity: 1;
 }
-.habilidades .habilidad .go ul li:hover  span:nth-child(4) {
-    transform: translate(30px,-30px);
+
+.habilidades .habilidad .go ul li:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
     opacity: 0.8;
 }
-.habilidades .habilidad .go ul li:hover  span:nth-child(3) {
-    transform: translate(20px,-20px);
+
+.habilidades .habilidad .go ul li:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
     opacity: 0.6;
 }
-.habilidades .habilidad .go ul li:hover  span:nth-child(2) {
-    transform: translate(10px,-10px);
+
+.habilidades .habilidad .go ul li:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
     opacity: 0.4;
 }
-.habilidades .habilidad .go ul li:hover  span:nth-child(1) {
-    transform: translate(0px,-0px);
+
+.habilidades .habilidad .go ul li:hover span:nth-child(1) {
+    transform: translate(0px, -0px);
     opacity: 0.2;
 }
 
-.habilidades .habilidad .go ul li:hover:nth-child(1)  span {
+.habilidades .habilidad .go ul li:hover:nth-child(1) span {
     background-color: #ffffff;
 }
+
 /*GO*/
 .habilidades .habilidad .go ul li:hover span {
     color: #277BC0;
-    box-shadow: -1px 1px 1px (255,255,255,0.05);
+    box-shadow: -1px 1px 1px (255, 255, 255, 0.05);
     z-index: 1000;
 
 }
 
 /* para el icono de Git */
-.habilidades .habilidad .git ul li:hover  span:nth-child(5) {
-    transform: translate(40px,-40px);
+.habilidades .habilidad .git ul li:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
     opacity: 1;
 }
-.habilidades .habilidad .git ul li:hover  span:nth-child(4) {
-    transform: translate(30px,-30px);
+
+.habilidades .habilidad .git ul li:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
     opacity: 0.8;
 }
-.habilidades .habilidad .git ul li:hover  span:nth-child(3) {
-    transform: translate(20px,-20px);
+
+.habilidades .habilidad .git ul li:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
     opacity: 0.6;
 }
-.habilidades .habilidad .git ul li:hover  span:nth-child(2) {
-    transform: translate(10px,-10px);
+
+.habilidades .habilidad .git ul li:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
     opacity: 0.4;
 }
-.habilidades .habilidad .git ul li:hover  span:nth-child(1) {
-    transform: translate(0px,-0px);
+
+.habilidades .habilidad .git ul li:hover span:nth-child(1) {
+    transform: translate(0px, -0px);
     opacity: 0.2;
 }
 
-.habilidades .habilidad .git ul li:hover:nth-child(1)  span {
+.habilidades .habilidad .git ul li:hover:nth-child(1) span {
     background-color: #fb5607;
 }
 
-.habilidades .habilidad .git ul li:hover:nth-child(2)  span {
-    background: linear-gradient(120deg, #9C0F48,#42032C) 
+.habilidades .habilidad .git ul li:hover:nth-child(2) span {
+    background: linear-gradient(120deg, #9C0F48, #42032C)
 }
 
 
 /* para el icono de AWS */
-.habilidades .habilidad .aws ul li:hover  span:nth-child(5) {
-    transform: translate(40px,-40px);
+.habilidades .habilidad .aws ul li:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
     opacity: 1;
 }
-.habilidades .habilidad .aws ul li:hover  span:nth-child(4) {
-    transform: translate(30px,-30px);
+
+.habilidades .habilidad .aws ul li:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
     opacity: 0.8;
 }
-.habilidades .habilidad .aws ul li:hover  span:nth-child(3) {
-    transform: translate(20px,-20px);
+
+.habilidades .habilidad .aws ul li:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
     opacity: 0.6;
 }
-.habilidades .habilidad .aws ul li:hover  span:nth-child(2) {
-    transform: translate(10px,-10px);
+
+.habilidades .habilidad .aws ul li:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
     opacity: 0.4;
 }
-.habilidades .habilidad .aws ul li:hover  span:nth-child(1) {
-    transform: translate(0px,-0px);
+
+.habilidades .habilidad .aws ul li:hover span:nth-child(1) {
+    transform: translate(0px, -0px);
     opacity: 0.2;
 }
 
-.habilidades .habilidad .aws ul li:hover:nth-child(1)  span {
-    background: linear-gradient(130deg, #fb5607 ,#ffd60a) 
+.habilidades .habilidad .aws ul li:hover:nth-child(1) span {
+    background: linear-gradient(130deg, #fb5607, #ffd60a)
 }
 
 
@@ -825,16 +857,20 @@ body {
 
 /* Seccion de Portafolio */
 
-.portafolio{
+.portafolio {
     background-color: #252A2E;
+    padding: 50px 30px;
+ 
 }
 
 .portafolio .contenido-seccion {
     max-width: 1100px;
     margin: auto;
+    font-size: 99;
 
 }
-.contenido-seccion h2{
+
+.contenido-seccion h2 {
     padding: 40px;
     font-size: 48px;
     font-family: 'Franklin Gothic Medium';
@@ -843,23 +879,117 @@ body {
 
 }
 
-.proyectos-grid{
- display: grid;
- grid-template-columns: repeat(auto-fit,minmax(290px,auto)) ;
- gap: 25px;
- width: 90%;
- 
- margin: 0 auto;
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, auto));
+    gap: 25px;
+    width: 90%;
+
+    margin: 0 auto;
 
 }
 
-.proyectos-grid img{
-   width: 100%;
-   display: block;
-   border-radius: 15px;
-   transition:  transform 0.2s ease;
+.proyectos-grid img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.2s ease;
 
 }
-.proyectos-grid img:hover{
+
+.proyectos-grid img:hover {
     transform: scale(1.1);
- }
+}
+
+/* contacto */
+
+.contacto {
+    background-color: #1e2326;
+    color: cornsilk;
+    text-align: center;
+    padding: 50px 0 30px 0;
+    position: relative;
+    width: 100%;
+
+}
+
+.contacto .redes {
+    margin-bottom: 20px;
+}
+
+.contacto .redes a {
+    color: aliceblue;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid aliceblue;
+    border-radius: 100%;
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.contacto .arriba {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+  font-size: 18px;
+
+}
+
+/* SECCION RESPOSIVA */
+@media  screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+   .nav-responsive{
+    display: block;
+   }
+   nav.responsive{
+    display: block;
+    position:absolute;
+    right: 0;
+    top: 75px;
+    background-color: #252A2E;
+    width: 180px;
+
+   }
+   nav.responsive ul{
+    display: block !important;
+   }
+   nav.responsive ul li{
+     border-bottom: 1px solid #00FF7F;
+     padding: 10px 0;
+   }
+
+@media screen and (max-width:700px) {
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+    .habilidades .fila{
+        display: block;
+    }
+    .habilidades .fila .col{
+        width: 100%;
+    }
+    .habilidades .fila .col .barra-habilidad{
+        width: 100%;
+    }
+     
+}
+   
+}
+    
