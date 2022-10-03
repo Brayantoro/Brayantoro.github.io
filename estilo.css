@@ -988,7 +988,18 @@ body {
     .habilidades .fila .col .barra-habilidad{
         width: 100%;
     }
+     .curriculum .fila{
+        display: block;
+     }
+     .curriculum .fila .col{
+        width: 90%;
+     }
      
+   .curriculum .fila .derecha{
+    margin-left: 20px;
+   }
+
+
 }
    
 }
