@@ -904,6 +904,81 @@ body {
     transform: scale(1.1);
 }
 
+/* Seccion de Portafolio  modals*/
+
+.eins-modal-content{
+  max-width: 800px;
+  background-color: #424949;
+}
+
+.eins-modal-preview{
+ width: 300px;
+ height: 350px;
+ margin: 0 auto;
+}
+
+.eins-modal-preview img{
+  width: 100%;
+  height: 100%;
+  padding: 0 0 20px 0;
+}
+
+.pw-contenido{
+ display: grid;
+ grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+}
+
+.eins-modal-text p{
+ font-size: 1.1rem;
+}
+
+.eins-modal-text2  {
+padding: 50px 0 10px;
+}
+
+
+.eins-modal-text2 a {
+ color: #fb5607;
+ text-decoration: none;
+ margin: 5px;
+ font-weight: bold;
+}
+
+
+
+.eins-modal-text3{
+
+}
+
+
+.eind-modal-tec{
+
+}
+
+.pw-contenido .eind-modal-tec .img1 img{
+    width: 120px;
+    height: 50px;
+
+    
+ 
+   }
+   
+
+
+.pw-contenido .eind-modal-tec img{
+ width: 50px;
+ height: 50px;
+ margin-top: 10px;
+
+}
+
+
+
+   
+   
+
+
+
 /* contacto */
 
 .contacto {

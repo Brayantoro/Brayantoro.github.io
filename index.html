@@ -9,7 +9,9 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portafolio</title>
+    <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal.min.css">
     <link rel="stylesheet" href="estilo.css">
+
 </head>
 
 <body>
@@ -26,7 +28,7 @@
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
                     <li><a href="#sobremi" onclick=" seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#habilidades"  onclick=" seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#habilidades" onclick=" seleccionar()">HABILIDADES</a></li>
                     <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
                     <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
                     <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
@@ -50,8 +52,10 @@
             <h3>Noveno semestre</h3>
             <div class="redes">
                 <a href="https://github.com/Brayantoro"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/brayan-estiven-gil-toro-556189233/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.youtube.com/channel/UCi16xG4hRSeU7vo_OmT_kMQ"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/brayan-estiven-gil-toro-556189233/"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/channel/UCi16xG4hRSeU7vo_OmT_kMQ"><i
+                        class="fa-brands fa-youtube"></i></a>
             </div>
         </div>
     </div>
@@ -79,7 +83,7 @@
                     <h3>Datos Personales</h3>
                     <ul>
                         <li>
-                            <strong>Cumpleaños :</strong>
+                            <strong>Fecha de Nacimiento :</strong>
                             30-08-1999
                         </li>
                         <li>
@@ -135,7 +139,8 @@
                 </div>
             </div>
             <button>
-                <a download="cv-BrayanToro" href="./docu/CV-BrayanEstevenToro.pdf" >  Descargar CV <i class="fa-solid fa-file-arrow-down"></i></a>
+                <a download="cv-BrayanToro" href="./docu/CV-BrayanEstevenToro.pdf"> Descargar CV <i
+                        class="fa-solid fa-file-arrow-down"></i></a>
                 <span class="overlay"></span>
             </button>
         </div>
@@ -392,13 +397,61 @@
         <div class="contenido-seccion">
             <h2>Portafolio</h2>
             <div class="proyectos-grid">
-                <div><img src="img/tetris.jpeg" alt=""></div>
-                <div><img src="img/angular.jpg" alt=""></div>
-                <div><img src="img/JuegoDinamico.png" alt=""></div>
-                <div><img src="img/carritoCompra.png" alt=""></div>
+                <div><a data-modal-id="Tetris"><img src="img/tetris.jpeg" alt=""></a></div>
+                <div><a data-modal-id="myModal"><img src="img/angular.jpg" alt=""></a></div>
+                <div><a data-modal-id="myModal"><img src="img/JuegoDinamico.png" alt=""></a></div>
+                <div><a data-modal-id="myModal"><img src="img/carritoCompra.png" alt=""></a></div>
             </div>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div id="myModal" class="eins-modal" data-options="openTransition:expandIn;OpenDuration:200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            Prueba
+            <button class="eins-modal-close-button">OK</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="Tetris" class="eins-modal" data-options="openTransition:expandIn;OpenDuration:200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="pw-contenido">
+                <div class="eins-modal-preview">
+                    <img src="img/tetris.jpeg" alt="">
+                </div>
+                <div class="eins-modal-text">
+                    <p>Descripcion</p>
+
+                    <div class="eins-modal-text2">
+                        <span>Enlace: </span><a href="">Repositorio</a>
+                    </div>
+                    <div class="eins-modal-text3">
+                        <span>Tecnologias Usadas</span>
+                        <div class="eind-modal-tec">
+
+                            <img src="iconos/python.png" alt="">
+                            <div class="img1"><img id="" src="iconos/Pygame_logo.svg.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
+
+
+
 
     <!--Seccion contacto -->
     <footer id="contacto" class="contacto">
@@ -413,7 +466,7 @@
         </div>
     </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
     <!-- Js Particulas -->
     <script src="particulas/particles.min.js"></script>
 
