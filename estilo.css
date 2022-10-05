@@ -1032,6 +1032,26 @@ padding: 30px 0 10px;
 
 }
 
+.btn-wsp{
+position: fixed;
+width: 55px;
+height: 55px;
+line-height: 55px;
+bottom: 30px;
+right: 30px;
+background: #25d366 ;
+color: #fff;
+border: #fff 2px solid;
+border-radius: 50px ;
+text-align: center;
+font-size: 30px;
+}
+.btn-wsp:hover{
+    text-decoration: none;
+    color:#25d366 ;
+    background: #fff;
+}
+
 /* SECCION RESPOSIVA */
 @media  screen and (max-width:980px){
     nav{
@@ -1086,6 +1106,7 @@ padding: 30px 0 10px;
 
 
 }
-   
+
+
 }
     
